@@ -1,7 +1,7 @@
-package com.concorde.core.src.domain
+package com.concorde.core.domain
 
-import com.concorde.core.src.domain.enums.UserRoleEnum
-import java.util.UUID
+import com.concorde.core.domain.enums.UserRoleEnum
+import java.util.*
 
 data class User(
     val id: String = UUID.randomUUID().toString(),

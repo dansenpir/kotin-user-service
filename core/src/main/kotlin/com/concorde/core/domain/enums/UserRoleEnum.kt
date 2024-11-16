@@ -1,4 +1,4 @@
-package com.concorde.core.src.domain.enums
+package com.concorde.core.domain.enums
 
 enum class UserRoleEnum(val role: String) {
     ADMIN("admin"),
