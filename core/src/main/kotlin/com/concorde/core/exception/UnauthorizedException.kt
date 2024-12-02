@@ -1,3 +1,3 @@
-package br.com.concorde.core.exception
+package com.concorde.core.exception
 
-class UnauthorizedException(message: String, val code: String) : Exception(message)
+class UnauthorizedException(message: String) : Exception(message)

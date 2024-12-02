@@ -1,5 +1,5 @@
 package com.concorde.usecase
 
-interface DeleteUseCase {
+interface UserDeleteUseCase {
     fun delete(id: String): Boolean
 }

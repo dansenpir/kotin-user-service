@@ -1,16 +1,15 @@
 package com.concorde.core.domain
 
 import com.concorde.core.domain.enums.UserRoleEnum
-import java.util.*
 
 data class User(
-    val id: String = UUID.randomUUID().toString(),
-    var login: String,
-    var email: String,
-    private val password: String,
-    var userRoleEnum: UserRoleEnum,
-    var claims: List<String> = mutableListOf(),
-    var deleted: Boolean = false
+    val id: String? = null,
+    val login: String,
+    val email: String,
+    val password: String,
+    val userRoleEnum: UserRoleEnum,
+    val claims: List<String>? = mutableListOf(),
+    val deleted: Boolean? = false
 ) {
 
     fun getAuthorities(): List<String> {
