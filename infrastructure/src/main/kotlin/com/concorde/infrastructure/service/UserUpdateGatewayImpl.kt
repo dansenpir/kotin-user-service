@@ -1,6 +1,6 @@
 package com.concorde.infrastructure.service
 
-import com.concorde.application.gateway.UserUpdateGateway
+import com.concorde.application.gateway.user.UserUpdateGateway
 import com.concorde.core.domain.User
 import com.concorde.core.exception.NotFoundException
 import com.concorde.infrastructure.entity.UserEntity

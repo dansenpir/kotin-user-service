@@ -1,6 +1,6 @@
 package com.concorde.infrastructure.service
 
-import com.concorde.application.gateway.UserDeleteGateway
+import com.concorde.application.gateway.user.UserDeleteGateway
 import com.concorde.infrastructure.repository.UserEntityRepository
 import org.springframework.dao.EmptyResultDataAccessException
 import org.springframework.stereotype.Service

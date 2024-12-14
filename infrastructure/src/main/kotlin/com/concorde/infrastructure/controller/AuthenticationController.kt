@@ -6,10 +6,10 @@ import com.concorde.infrastructure.dto.request.authentication.ValidateTokenReque
 import com.concorde.infrastructure.dto.response.AuthenticationResponse
 import com.concorde.infrastructure.dto.response.BaseResponse
 import com.concorde.infrastructure.mapper.UserMapper
-import com.concorde.usecase.AuthenticationUseCase
-import com.concorde.usecase.GenerateTokenUseCase
-import com.concorde.usecase.UserFindByLoginUseCase
-import com.concorde.usecase.ValidateTokenUseCase
+import com.concorde.usecase.authentication.AuthenticationUseCase
+import com.concorde.usecase.authentication.GenerateTokenUseCase
+import com.concorde.usecase.authentication.ValidateTokenUseCase
+import com.concorde.usecase.user.UserFindByLoginUseCase
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RequestBody

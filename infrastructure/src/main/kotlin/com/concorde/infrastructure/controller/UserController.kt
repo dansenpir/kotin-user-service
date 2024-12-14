@@ -7,9 +7,9 @@ import com.concorde.infrastructure.dto.request.user.UserUpdateRequest
 import com.concorde.infrastructure.dto.response.BaseResponse
 import com.concorde.infrastructure.dto.response.UserResponse
 import com.concorde.infrastructure.mapper.UserMapper
-import com.concorde.usecase.UserDeleteUseCase
-import com.concorde.usecase.UserRegisterUseCase
-import com.concorde.usecase.UserUpdateUseCase
+import com.concorde.usecase.user.UserDeleteUseCase
+import com.concorde.usecase.user.UserRegisterUseCase
+import com.concorde.usecase.user.UserUpdateUseCase
 import org.springframework.web.bind.annotation.DeleteMapping
 import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.PutMapping
@@ -26,7 +26,7 @@ class UserController(
     private val userUpdateUseCase: UserUpdateUseCase,
     private val userMapper: UserMapper
 ) {
-    @PostMapping("/register")
+    @PostMapping
     fun register(@RequestBody request: UserRegistrationRequest): BaseResponse<UserResponse> {
         val registeredUser: User = userRegisterUseCase.register(userMapper.toUser(request))
 
@@ -36,7 +36,7 @@ class UserController(
         )
     }
 
-    @PutMapping("/update")
+    @PutMapping
     fun update(@RequestBody request: UserUpdateRequest): BaseResponse<UserResponse> {
         val updatedUser: User = userUpdateUseCase.update(userMapper.toUser(request))
 
@@ -46,7 +46,7 @@ class UserController(
         )
     }
 
-    @DeleteMapping("/delete")
+    @DeleteMapping
     fun delete(@RequestBody request: UserDeleteRequest): BaseResponse<Boolean> {
         val isDeletedUser: Boolean = userDeleteUseCase.delete(request.id)
 

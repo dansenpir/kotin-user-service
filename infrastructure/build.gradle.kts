@@ -26,9 +26,6 @@ dependencies {
 
     implementation("com.auth0:java-jwt:4.4.0")
 
-    implementation("org.flywaydb:flyway-core")
-    implementation("org.flywaydb:flyway-database-postgresql:9.22.3")
-
     runtimeOnly("org.postgresql:postgresql:42.7.2")
     implementation("org.apache.commons:commons-lang3:3.13.0")
 

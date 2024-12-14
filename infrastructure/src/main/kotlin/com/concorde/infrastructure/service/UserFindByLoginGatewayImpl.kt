@@ -1,6 +1,6 @@
 package com.concorde.infrastructure.service
 
-import com.concorde.application.gateway.UserFindByLoginGateway
+import com.concorde.application.gateway.user.UserFindByLoginGateway
 import com.concorde.core.domain.User
 import com.concorde.infrastructure.mapper.UserMapper
 import com.concorde.infrastructure.repository.UserEntityRepository
