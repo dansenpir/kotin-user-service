@@ -1,2 +1,2 @@
-# auth
-Authentication and Authorization Service
+# user
+Authentication and Authorization Service for users.
